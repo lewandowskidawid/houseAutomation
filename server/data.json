@@ -1,5 +1,5 @@
 {
-    "light": false,
-    "curtains": false,
+    "light": true,
+    "courtine": true,
     "temperature": 21
 }

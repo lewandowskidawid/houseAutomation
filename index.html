@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>House Settings</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/fontawesome.css">
+        <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-3">
+                        <div class="sidebar">
+                            <h2 class="sidebar-category">Controllers</h2>
+                            <form class="control-panel">
+                                <div class="form-control">
+                                    <label>Temperature</label>
+                                    <input type="number" min="0" class="temperature-controller">
+                                </div>
+                                <div class="form-control-group">
+                                    <div class="form-control">
+                                        <label><input type="checkbox" class="light-controller">Light</label>
+                                    </div>
+                                    <div class="form-control">
+                                        <label><input type="checkbox" class="curtaine-controller">Courtaine</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col col-lg-9 house-plan">
+                        <div class="row">
+                            <div class="col col-lg-12">
+                                <div class="attic">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-xs-4">
+                                <div class="room">
+                                    <div class="light-bulb"></div>
+                                    <div class="temperature"><span>ON</span>°C</div>
+                                </div>
+                            </div>
+                            <div class="col col-xs-4">
+                                <div class="room">
+                                    <div class="light-bulb"></div>
+                                    <div class="temperature"><span>ON</span>°C</div> 
+                                </div>
+                            </div>
+                            <div class="col col-xs-4">
+                                <div class="room">
+                                    <div class="light-bulb"></div>
+                                    <div class="temperature"><span>ON</span>°C</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-xs-4">
+                                <div class="room">
+                                    <div class="light-bulb"></div>
+                                    <div class="temperature"><span>ON</span>°C</div>  
+                                </div>
+                            </div>
+                            <div class="col col-xs-4">
+                                <div class="room">
+                                    <div class="light-bulb"></div>
+                                    <div class="temperature"><span>ON</span>°C</div>  
+                                </div>
+                            </div>
+                            <div class="col col-xs-4">
+                                <div class="room">
+                                    <div class="light-bulb"></div>
+                                    <div class="temperature"><span>ON</span>°C</div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="/js/util/Event.js"></script>
+        <script src="/js/controllers/temperature/TemperatureController.js"></script>
+        <script src="/js/controllers/temperature/TemperatureModel.js"></script>
+        <script src="/js/controllers/temperature/TemperaturePanel.js"></script>
+        <script src="/js/controllers/temperature/TemperatureSimulation.js"></script>
+        <script src="/js/controllers/light/LightController.js"></script>
+        <script src="/js/controllers/light/LightModel.js"></script>
+        <script src="/js/controllers/light/LightPanel.js"></script>
+        <script src="/js/controllers/light/LightSimulation.js"></script>
+        <script src="/js/controllers/courtine/CourtineController.js"></script>
+        <script src="/js/controllers/courtine/CourtineModel.js"></script>
+        <script src="/js/controllers/courtine/CourtinePanel.js"></script>
+        <script src="/js/controllers/courtine/CourtineSimulation.js"></script>
+        <script src="/js/util/ServerApi.js"></script>
+        <script src="/js/App.js"></script>
+    </body>
+
+</html>
